@@ -1,0 +1,41 @@
+  <!-- end header -->
+  <section class="slider_section">
+    <div class="banner_main">
+        <div class="container-fluid">
+            <div class="contact">
+                <div class="container-fluid padddd">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="title">
+                                <br>
+                                <h2>Admin <strong class="black">Login</strong></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">                        
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 padddd">
+                            <form #frm="ngForm" (submit)="login(frm.value)" class="main_form">
+                                <div class="row">                                   
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                        <input class="form-control" placeholder="Email" type="text" name="email" ngModel>
+                                    </div>
+
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                        <input class="form-control" placeholder="Password" type="password" 
+                                        name="password" ngModel>
+                                    </div>
+                                  
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                        <button type="submit" class="send">Login</button>
+                                        &nbsp;
+                                        <b class='text-danger'>{{loginmsg}}</b>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

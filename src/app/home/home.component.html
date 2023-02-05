@@ -1,0 +1,41 @@
+<section class="slider_section">
+    <div class="banner_main">
+        <div class="container-fluid">
+            <div class="contact">
+                <div class="container-fluid padddd">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="title">
+                                <br>
+                                <h2>TechMall <strong class="black">Products</strong></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <form #frm="ngForm" (submit)="save(frm.value)">
+                    <div class="row">
+                       <div class='col-lg-4 col-md-4'>
+                            <input type="text" name="title" ngModel
+                            class='form-control' placeholder="Product Title">
+                       </div>
+
+                       <div class='col-lg-4 col-md-4'>
+                        <input type="text" name="price" ngModel
+                        class='form-control' placeholder="Product Price">
+                       </div>
+                       <div class='col-lg-4 col-md-4'>
+                        <button type='submit' class='btn btn-info'>Save Product</button>
+                        &nbsp;
+                        <b class='text-danger'>{{msg}}</b>
+                    </div>
+                    </div>
+                        
+                    </form>
+                    <hr>
+
+               
+
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>    

@@ -1,0 +1,26 @@
+
+<div class="card">
+    <div class="card-body">
+        <table class='table'>
+           <thead>
+
+               <tr>
+                   <th>S.No.</th>
+                   <th>Product Title</th>
+                   <th>Product Price</th>
+                   <th>Add Product</th>
+               </tr>
+           </thead>
+           <tbody >
+            <tr *ngFor="let prod of prodList;index as i">
+                <th>{{i+1}}</th>
+                <th>{{prod.title}}</th>
+                <th>{{prod.price}}</th>
+                <th><button class="btn btn-info">Add to Cart</button> </th>
+            </tr>
+           </tbody>
+            
+            
+        </table>
+    </div>
+  </div>
